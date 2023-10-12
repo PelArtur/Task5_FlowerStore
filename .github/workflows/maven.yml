@@ -31,12 +31,3 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Run Tests
       run: mvn test --file pom.xml
-
-  test:
-  
-    runs-on: self-hosted
-  
-    steps:
-    - uses: actions/checkout@v3
-    - name: Run Tests
-      run: mvn test --file pom.xml
