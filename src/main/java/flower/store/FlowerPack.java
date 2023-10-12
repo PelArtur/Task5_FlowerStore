@@ -3,8 +3,8 @@ package flower.store;
 import lombok.Getter;
 
 @Getter
-public class FlowerPack {
-    private Flower flower;
+public class FlowerPack extends Item{
+    private final Flower flower;
     private int quantity;
 
     public FlowerPack(Flower flower){
